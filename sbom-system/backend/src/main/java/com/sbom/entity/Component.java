@@ -15,8 +15,7 @@ import java.util.List;
 public class Component {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "component_seq")
-    @SequenceGenerator(name = "component_seq", sequenceName = "SBOM_COMPONENT_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "COMPONENT_ID")
     private Long componentId;
     

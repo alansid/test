@@ -69,11 +69,16 @@ public class ProjectService {
         Long mediumVulns = vulnerabilityRepository.countVulnerabilitiesByProjectAndSeverity(project.getProjectId(), "MEDIUM");
         Long lowVulns = vulnerabilityRepository.countVulnerabilitiesByProjectAndSeverity(project.getProjectId(), "LOW");
         
-        dto.setCriticalVulnerabilities(criticalVulns.intValue());
-        dto.setHighVulnerabilities(highVulns.intValue());
-        dto.setMediumVulnerabilities(mediumVulns.intValue());
-        dto.setLowVulnerabilities(lowVulns.intValue());
-        dto.setTotalVulnerabilities((criticalVulns + highVulns + mediumVulns + lowVulns).intValue());
+        dto.setCriticalVulnerabilities(criticalVulns != null ? criticalVulns.intValue() : 0);
+        dto.setHighVulnerabilities(highVulns != null ? highVulns.intValue() : 0);
+        dto.setMediumVulnerabilities(mediumVulns != null ? mediumVulns.intValue() : 0);
+        dto.setLowVulnerabilities(lowVulns != null ? lowVulns.intValue() : 0);
+        
+        long totalVulns = (criticalVulns != null ? criticalVulns : 0L) + 
+                         (highVulns != null ? highVulns : 0L) + 
+                         (mediumVulns != null ? mediumVulns : 0L) + 
+                         (lowVulns != null ? lowVulns : 0L);
+        dto.setTotalVulnerabilities((int) totalVulns);
         
         return dto;
     }
