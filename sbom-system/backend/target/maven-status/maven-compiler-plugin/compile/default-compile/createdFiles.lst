@@ -1,0 +1,15 @@
+com/sbom/entity/Project.class
+com/sbom/dto/ComponentDto.class
+com/sbom/controller/ProjectController.class
+com/sbom/dto/ProjectDto.class
+com/sbom/repository/ProjectRepository.class
+com/sbom/dto/VulnerabilityDto.class
+com/sbom/repository/VulnerabilityRepository.class
+com/sbom/SbomApplication.class
+com/sbom/entity/Component.class
+com/sbom/service/ProjectService.class
+com/sbom/entity/Vulnerability.class
+com/sbom/service/ComponentService.class
+com/sbom/config/WebConfig.class
+com/sbom/repository/ComponentRepository.class
+com/sbom/controller/ComponentController.class

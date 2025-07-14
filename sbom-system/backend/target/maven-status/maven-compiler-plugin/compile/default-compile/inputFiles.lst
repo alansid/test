@@ -1,0 +1,15 @@
+/workspace/sbom-system/backend/src/main/java/com/sbom/controller/ProjectController.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/dto/VulnerabilityDto.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/service/ComponentService.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/dto/ProjectDto.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/entity/Component.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/repository/ProjectRepository.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/entity/Project.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/controller/ComponentController.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/dto/ComponentDto.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/repository/VulnerabilityRepository.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/repository/ComponentRepository.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/config/WebConfig.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/entity/Vulnerability.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/service/ProjectService.java
+/workspace/sbom-system/backend/src/main/java/com/sbom/SbomApplication.java
