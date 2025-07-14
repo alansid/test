@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: sbom-backend
+  
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: sbom_user
+    password: sbom_password
+    driver-class-name: oracle.jdbc.OracleDriver
+    
+  jpa:
+    database-platform: org.hibernate.dialect.OracleDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    com.sbom: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics

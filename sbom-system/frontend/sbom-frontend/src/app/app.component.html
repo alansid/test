@@ -1,0 +1,36 @@
+<div class="app-container">
+  <!-- 左側選單 -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2><i class="fas fa-shield-alt"></i> SBOM Manager</h2>
+    </div>
+    
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a [routerLink]="['/projects']" routerLinkActive="active" class="nav-link">
+          <i class="fas fa-project-diagram"></i>
+          <span>專案列表</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/search']" routerLinkActive="active" class="nav-link">
+          <i class="fas fa-search"></i>
+          <span>套件搜尋</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a [routerLink]="['/dashboard']" routerLinkActive="active" class="nav-link">
+          <i class="fas fa-chart-bar"></i>
+          <span>統計資訊</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- 主要內容區域 -->
+  <main class="main-content">
+    <div class="content-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>
